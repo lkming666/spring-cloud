@@ -73,7 +73,7 @@
         </dependencies>
     </dependencyManagement>
     <build>
-        <finalName>hf_itheima_cloud</finalName>
+        <!--<finalName>hf_itheima_cloud</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -90,7 +90,7 @@
                     </delimiters>
                 </configuration>
             </plugin>
-        </plugins>
+        </plugins>-->
     </build>
 
 

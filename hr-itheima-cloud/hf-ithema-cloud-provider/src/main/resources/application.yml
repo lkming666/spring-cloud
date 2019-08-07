@@ -7,7 +7,7 @@ mybatis:
     - classpath:mybatis/mapper/*.xml # mapper映射文件
 spring:
   application:
-    name: hf-itheima-cloud-provider # 重要
+    name: hf-itheima-cloud-provider # 重要(不能是下划线)
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver # mysql驱动包
@@ -27,10 +27,12 @@ eureka:
     prefer-ip-address: true #显示IP地址
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://localhost:7001/eureka/ #注册中心地址
 
+#显示微服务信息
 info:
-  app.name: hf_itheima_cloud
-  company.name: www.itheima.com
-  build.artifactId: hf-itheima-cloud-provider
-  build.version: 1.0
+  app.name: hf_itheima_cloud #父工程名称
+  company.name: www.itheima.com  #域名
+  build.artifactId: hf-itheima-cloud-provider #服务工程名
+  build.version: 1.0 #版本号
+  yyyy: 8888
