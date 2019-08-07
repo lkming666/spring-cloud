@@ -3,6 +3,7 @@ server:
 eureka:
   server:
     enable-self-preservation: false # 开发阶段false可以， 正式环境中建议启用自我保护模式
+    eviction-interval-timer-in-ms: 1000 #踢出问题服务时间间隔60*1000ms
   instance:
     hostname: localhost
   client:

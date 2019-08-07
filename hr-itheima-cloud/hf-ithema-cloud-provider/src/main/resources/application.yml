@@ -24,7 +24,10 @@ spring:
 eureka:
   instance:
     instance-id: hf-itheima-cloud-provider:8001 #修改别名
-    prefer-ip-address: true #显示IP地址
+    prefer-ip-address: true  #显示IP地址
+    lease-renewal-interval-in-seconds: 1 #汇报心跳间隔时间,默认30s汇报一次
+    lease-expiration-duration-in-seconds: 3 # 启用自我保护时间 默认90s (3次心跳间隔)
+
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/ #注册中心地址
