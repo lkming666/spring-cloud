@@ -12,6 +12,7 @@
         <module>hf-ithema-cloud-provider</module>
         <module>hf-ithema-cloud-consumer</module>
         <module>ithema-model</module>
+        <module>hf-itheima-cloud-eureka</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

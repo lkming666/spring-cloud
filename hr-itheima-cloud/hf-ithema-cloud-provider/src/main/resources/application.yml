@@ -21,16 +21,16 @@ spring:
       max-total: 5 # 最大连接数
       max-wait-millis: 200 # 等待连接获取的最大超时时间
 
-#eureka:
-#  instance:
-#    instance-id: hf-itheima-cloud-provider:8001 #修改别名
-#    prefer-ip-address: true #显示IP地址
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:7001/eureka/
-#
-#info:
-#  app.name: hf_itheima_cloud
-#  company.name: www.itheima.com
-#  build.artifactId: hf-itheima-cloud-provider
-#  build.version: 1.0
+eureka:
+  instance:
+    instance-id: hf-itheima-cloud-provider:8001 #修改别名
+    prefer-ip-address: true #显示IP地址
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+
+info:
+  app.name: hf_itheima_cloud
+  company.name: www.itheima.com
+  build.artifactId: hf-itheima-cloud-provider
+  build.version: 1.0

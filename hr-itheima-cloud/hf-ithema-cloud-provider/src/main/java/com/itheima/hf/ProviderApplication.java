@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.itheima.hf.mapper")
 public class ProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderApplication.class);
+        SpringApplication.run(ProviderApplication.class,args);
 
     }
 }

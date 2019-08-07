@@ -1,0 +1,14 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: hf-itheima-cloud-consumer
+
+eureka:
+  instance:
+    instance-id: hf-itheima-cloud-provider:8088 #修改别名
+    prefer-ip-address: true #显示IP地址
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
